@@ -39,11 +39,11 @@ class App {
     // 29 - Criando um método database que será responsavel por fazer a conexão com o mongo
     public async database() {
         try {
-            // Estamos desabilitando a mensagem de depreciado para a strictQuery
-            mongoose.set("strictQuery", true)
-            // 30 - utilizando o mongoose e a função connect para conectar no nosso banco que está na nuvem
-            await mongoose.connect('mongodb+srv://thiagobussola:teste123@cluster0.yr6yk6b.mongodb.net/?retryWrites=true&w=majority')
-            console.log('Connect database success')
+            // // Estamos desabilitando a mensagem de depreciado para a strictQuery
+            // mongoose.set("strictQuery", true)
+            // // 30 - utilizando o mongoose e a função connect para conectar no nosso banco que está na nuvem
+            // await mongoose.connect('mongodb+srv://thiagobussola:teste123@cluster0.yr6yk6b.mongodb.net/?retryWrites=true&w=majority')
+            // console.log('Connect database success')
 
         } catch (err) {
             console.error('Connect database fail, error', err)
